@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+<h1>Checkout</h1>
+
+    <section>
+        <h2>Your Cart</h2>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="A decorative colorful cube">
+            <figcaption>Magic Cube x 1</figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            <div>
+                <label for="card-name">
+                    Name on Card <span aria-hidden="true">*</span>
+                </label>
+                <input 
+                    id="card-name" 
+                    name="card-name" 
+                    type="text" 
+                    required 
+                    placeholder="John Doe">
+            </div>
+
+            <div>
+                <label for="card-number">
+                    Card Number <span aria-hidden="true">*</span>
+                </label>
+                <input 
+                    id="card-number" 
+                    name="card-number" 
+                    type="text" 
+                    required 
+                    aria-describedby="card-number-help" 
+                    placeholder="1234-5678-9012-3456">
+                <p id="card-number-help">Please enter the 16 digits located on the front of your card without spaces.</p>
+            </div>
+
+            <button type="submit">Complete Purchase</button>
+        </form>
+    </section>
+</body>
+
+</html>
