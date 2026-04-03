@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Media Player</title>
+</head>
+<body>
+  <main>
+    <h1>Personal Media Center</h1>
+
+    <section>
+      <h2>Now Playing: Sailing Away</h2>
+      <audio controls aria-label="A relaxing lo-fi song titled Sailing Away">
+        <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section>
+      <h2>Educational Video: JavaScript Map Method</h2>
+      <video controls width="600" aria-label="Tutorial video explaining how the JavaScript map method works">
+        <source src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4" type="video/mp4">
+        <track 
+          src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.vtt" 
+          kind="subtitles" 
+          srclang="en" 
+          label="English"
+          default>
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <section>
+      <h2>Video Transcript</h2>
+      <p>
+        In this video, we explore the JavaScript .map() method. This powerful array method allows you to create a new array by applying a function to every element of the original array. It is a fundamental tool for functional programming in JavaScript, especially useful when working with frameworks like React to render lists of components.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
